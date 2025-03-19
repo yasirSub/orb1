@@ -1,73 +1,55 @@
-# Orb1
+# Orb1 Agency Website
 
-A modern web application for service management built with Next.js, TypeScript, and Tailwind CSS.
-
-## Features
-
-- User Authentication (Admin, Worker, User roles)
-- Dark/Light Mode
-- Responsive Design
-- Service Management
-- User Dashboard
-- Worker Dashboard
-- Admin Dashboard
-
-## Tech Stack
-
-- Next.js 13+ (App Router)
-- TypeScript
-- Tailwind CSS
-- React Icons
-
-## Getting Started
-
-1. Clone the repository:
-```bash
-git clone https://github.com/yasirSub/orb1.git
-```
-
-2. Install dependencies:
-```bash
-cd orb1
-npm install
-```
-
-3. Run the development server:
-```bash
-npm run dev
-```
-
-4. Open [http://localhost:3000](http://localhost:3000) with your browser.
+A full-stack agency website built with Next.js, Express.js, and MongoDB.
 
 ## Project Structure
 
 ```
-/src
-  /app
-    /admin
-    /worker
-    /dashboard
-    /login
-    /signup
-  /components
-    /layout
-    /ui
-  /utils
-  /styles
+orb1/
+├── frontend/         # Next.js frontend application
+├── backend/          # Express.js backend API
+└── README.md         # Project documentation
 ```
 
-## Environment Variables
+## Tech Stack
 
-Create a `.env.local` file in the root directory and add:
+### Frontend
+- Next.js (React framework)
+- TypeScript
+- Tailwind CSS for styling
+- ESLint for code quality
 
-```env
-NEXT_PUBLIC_API_URL=your_api_url
+### Backend
+- Express.js (Node.js framework)
+- TypeScript
+- MongoDB with Mongoose
+- JWT for authentication
+- bcrypt for password hashing
+
+## Getting Started
+
+### Frontend Development
+```bash
+cd frontend
+npm install
+npm run dev
 ```
 
-## Contributing
+### Backend Development
+```bash
+cd backend
+npm install
+npm run dev
+```
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+## Features
+
+- User authentication (Admin, Worker, Visitor roles)
+- Project management system
+- Comment system for completed projects
+- Admin dashboard for workers and managers
+- Responsive design for all devices
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+ISC 
