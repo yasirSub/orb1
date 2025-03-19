@@ -1,0 +1,30 @@
+name: Setup GitHub Pages
+
+on:
+  workflow_dispatch:
+  push:
+    branches: ["main"]
+    paths:
+      - '.github/workflows/setup-pages.yml'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  setup-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+        with:
+          enablement: true
+      
+      - name: Setup GitHub Pages
+        run: |
+          echo "Setting up GitHub Pages..."
+          echo "This workflow ensures that GitHub Pages is enabled for this repository." 
